@@ -36,49 +36,98 @@
 
 
 
-{
-    // Keep Keen event at the top.
-    "keen": {
-        "timestamp": "2015-10-06T01:20:48.906Z",
-        "created_at": "2015-10-06T01:20:49.940Z",
-        "id": "561321f16f31a21148152baa"
-    },
-    // Store organization details so we can easily cohort these events (by organization and user signup date)
-    "organisation": {
-        "id": 12,
-        "name": "MentorMe",
-        "country": "US",
-        "signup_date": "2015-10-06T01:20:48.906Z",
-        "referrer": {
-            // Referrer attributed here
-            // Include all UTM stuff?
-        }
-    },
 
-    // Store event attributes so we can easily filter by revenue type, plan type, order type, 
-    "revenue": {
-        "net_amount_in_eur": 62,
-        "gross_amount_in_eur": 62,
-        "type": "new|returning|recurring|upgrade|one-time|refund",
-        "order": {
-            "start_time": "2015-10-06T01:20:20Z",
-            "end_time": "2015-10-06T01:20:20Z",
-            "id": 28292,
-            "discounted": false, // should this be a % in stead of a boolean?
-            "payment_method": {
-                "id": 12567123,
-                "type": "mastercard | visa | paypal | SEPA | etc."
-            },
-            "currency": "usd",
-            "net_amount_in_eur": 123123,
-            "gross_amount_in_eur": 123123,
-            "package": {
-                "id": 207,
-                "slug": "prco_business_yearly",
-                "type": "business",
-                "description": "pr.co Business yearly",
-                "frequency_unit": "year"
-            }
-        }
+// recurring_revenue
+{
+  "keen": {
+    "timestamp": "2015-10-06T01:20:48.906Z",
+    "created_at": "2015-10-06T01:20:49.940Z",
+    "id": "561321f16f31a21148152baa"
+  },
+  "net_amount_in_eur": 62,
+  "gross_amount_in_eur": 62,
+  "start_time": "2015-10-06T01:20:20Z",
+  "end_time": "2015-10-06T01:20:20Z",
+  "type": "new|returning|recurring|upgrade|refund",
+  "order": {
+    "id": 28292,
+    "discounted": false,
+    "currency": "usd",
+    "net_amount_in_eur": 123123,
+    "gross_amount_in_eur": 123123,
+    "start_time": "2015-10-06T01:20:20Z",
+    "end_time": "2015-10-06T01:20:20Z"
+  },
+  "subscription": {
+    "id": 45345,
+    "created_at": "2015-10-06T01:20:49.940Z",
+    "subscription_package": {
+      "id": 455,
+      "type": "business",
+      "slug": "prco_business_yearly",
+      "net_amount_in_eur": 123123,
+      "gross_amount_in_eur": 123123,
+      "description": "pr.co Business yearly",
+      "frequency_unit": "year"
     }
+  },
+  "organisation": {
+    "id": 12,
+    "country": "US",
+    "name": "MentorMe",
+    "created_at": "2015-10-06T01:20:20Z",
+    "referrer": {
+      // Referrer attributed here
+      // Include all UTM stuff?
+    }
+  }
 }
+
+
+
+
+// organisation_created
+{
+  "keen": {
+    "timestamp": "2015-10-06T01:20:48.906Z",
+    "created_at": "2015-10-06T01:20:49.940Z",
+    "id": "561321f16f31a21148152baa"
+  },
+  "id": 12,
+  "country": "US",
+  "name": "MentorMe",
+  "created_at": "2015-10-06T01:20:20Z",
+  "referrer": {
+    // Referrer attributed here
+    // Include all UTM stuff?
+  }
+}
+
+
+
+
+// user_visit
+{
+  "keen": {
+    "timestamp": "2015-10-06T01:20:48.906Z",
+    "created_at": "2015-10-06T01:20:49.940Z",
+    "id": "561321f16f31a21148152baa"
+  },
+  "id": 14545,
+  "first_name": "Jaap",
+  "last_name": "de Boer",
+  "email": "jaap@pr.co",
+  "created_at": "2015-10-06T01:20:20Z",
+  "organisation": {
+    "id": 12,
+    "country": "US",
+    "name": "MentorMe",
+    "created_at": "2015-10-06T01:20:20Z",
+    "referrer": {
+      // Referrer attributed here
+      // Include all UTM stuff?
+    }
+  }
+}
+
+
