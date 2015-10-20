@@ -69,7 +69,22 @@ Some events are triggered by time or other external factors:
 
 We'll be implenting the different events in the order in which they are listed here. Click through for JSON:
 
-1. [Recurring revenue](/recurring_revenue.json)
-2. [Organization created](/create_organization.json)
-3. [App Visit](/app_visit.json)
+1. [Recurring revenue](/recurring_revenue.js)
+2. [Organization created](/create_organization.js)
+3. [App Visit](/app_visit.js)
 
+
+### 1. Recurring revenue
+
+Ability to Track MRR using cohorts by organization signup date and user signup date. Be able to filter per country, referring channel and package type ( business, startup, enterprise, agency, event) and payment frequency (monthly,  yearly) and group by new, recurring, returned (returning customers that have churned for a few months), upgraded (customers getting a more expensive package) and churned/downgraded.
+ 
+How do we track correctly churned customers?
+How to handle refunds and chargebacks? (Right now we are firing negative copies of the same revenue event.)
+
+### 2. Create organization event
+
+Mostly used so we can see referrals. 
+
+### 3. App visit
+
+Used to track retention.
