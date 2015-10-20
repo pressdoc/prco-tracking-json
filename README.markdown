@@ -69,8 +69,7 @@ Some events are triggered by time or other external factors:
 
 We'll be implenting the different events in the order in which they are listed here. Click through for JSON:
 
-1. [Revenue](/revenue.json)
-2. [Create organization](/create_organization.json)
-3. [Log in](/log_in.json)
-4. [Publish news release](/publish_news_release.json)
+1. [Recurring revenue](/recurring_revenue.json)
+2. [Organization created](/create_organization.json)
+3. [App Visit](/app_visit.json)
 
