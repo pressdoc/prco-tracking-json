@@ -32,47 +32,65 @@ Dashboards that enables us to instantly see the following:
 
 ## Key events
 
-We distuingish two kinds of events - those that describe usage of our customers in our application (app metrics) and events that describe usage of visitors in the public facing newsroom (public metrics).
+We distuingish different kinds of events - those that describe usage of our customers in our application (app metrics) and events that describe usage of visitors in the public facing newsroom (public metrics) and events with a backend trigger (recurring payments, credit card expired).
+
 
 ### App metrics
-The key user events for our app are:
 
-- create organization account
-- create user account
-- create newsroom
-- publish a news release
-- add / update contacts
-- send email about release (create 1 or multiple)
-- login
-- create clipping of news
-- make payment
-- upgrade / downgrade account
-- delete account
+We'll track the following customer actions in our app:
+
+1. Signed-up user
+2. Created Organisation
+3. Created Newsroom
+4. Created Campaign
+5. Published Release
+6. Created Contactlist
+7. Logged-in User
+8. Added Contact 
+9. Added Distribution
+10. Finalised Campaign
+11. Sent distribution
+12. Viewed Report
+13. Upgrade Subscription
+14. Cancelled Subscription
+15. Charged Payment
+16. Created Clipping
+
+Ignoring for now:
+
+* Imported contact-list
+* Edited contact
 
 
-### Public metrics
+### Public facing metrics
 
 The key events for visitors to public newsrooms are:
 
-- news release activity 
-- open / click on email (measured through Mandrill)
+1. Opened Email (measured through Mandrill)
+2. Clicked Email (measured through Mandrill)
+3. Viewed Release
 
-### Automatic metrics
+
+### Time-triggered metrics
 
 Some events are triggered by time or other external factors:
 
-- revenue event (recognized revenue - usually triggered by user buying a new account / upgrading account)
-- credit card expired (incl. downgrade account)
+1. Recurred Revenue - event (recognized revenue - usually triggered by user buying a new account / upgrading account)
+2. Expired Creditcard (incl. downgrade account)
 
 
 ## Events attributes
 
 We'll be implenting the different events in the order in which they are listed here. Click through for JSON:
 
-1. [Recurring revenue](/recurring_revenue.js)
-2. [Organization created](/create_organization.js)
-3. [App Visit](/app_visit.js)
+- Unknown what order / priorities of any events.
+- Recurring revenue now through profitwell.
+- Other events -> Analytics?
+- And payment details are important as well as should go to GA too.
 
+
+
+OLD -->
 
 ### 1. Recurring revenue
 
@@ -81,10 +99,3 @@ Ability to Track MRR using cohorts by organization signup date and user signup d
 How do we track correctly churned customers?
 How to handle refunds and chargebacks? (Right now we are firing negative copies of the same revenue event.)
 
-### 2. Create organization event
-
-Mostly used so we can see referrals. 
-
-### 3. App visit
-
-Used to track retention.
