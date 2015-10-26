@@ -24,8 +24,6 @@ We're going to track 17 events, now we need to say what info we want for each ev
   * language: language (String)
 
 6. Created Contactlist
-
-7. 
   * type: "presslist|segment"
 
 7. Logged-in User (still need to work out implementation details)
