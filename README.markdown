@@ -27,12 +27,12 @@ Dashboards that enables us to instantly see the following:
 2. Tracking directly to Segment.com 
 	A. From Segment.com we are sending all events to Intercom, Keen.io.
 	B. And we tracking pixels for Adroll.
-3. Revenue events sent from our backend through segment using a daily cron job(?)
+3. Revenue events sent from our backend through segment asynchronously
 
 
 ## Key events
 
-We distuingish different kinds of events - those that describe usage of our customers in our application (app metrics) and events that describe usage of visitors in the public facing newsroom (public metrics) and events with a backend trigger (recurring payments, credit card expired).
+We distinguish different kinds of events - those that describe usage of our customers in our application (app metrics) and events that describe usage of visitors in the public facing newsroom (public metrics) and events with a backend trigger (recurring payments, credit card expired).
 
 
 ### App metrics
