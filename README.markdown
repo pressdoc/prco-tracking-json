@@ -51,10 +51,11 @@ We'll track the following customer actions in our app:
 10. Finalised Campaign
 11. Sent distribution
 12. Viewed Report
-13. Upgrade Subscription
+13. Upgraded Subscription
 14. Cancelled Subscription
-15. Charged Payment
-16. Created Clipping
+15. Stopped Subscription
+16. Charged Payment
+17. Created Clipping
 
 Ignoring for now:
 
