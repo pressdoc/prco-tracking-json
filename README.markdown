@@ -28,8 +28,7 @@ This README outlines the key events in tracking the success of how pr.co is used
 3. Enable in depth analysis
 	- Understand specific customer behaviour better:
 		- e.g. funnels, drip campaigns, content marketing 
-	- Use keen.io to track mostly everything
-	- Use keen.io explorer + API to analyze.
+	- Use SimplyINsight data concierge for extra analysis
 	- Retention campaigns - drip / retention emails / retargeting
 
 4. Provide customer facing analytics
@@ -57,6 +56,30 @@ This README outlines the key events in tracking the success of how pr.co is used
 
 Find the [event list here](/Event_list.markdown).
 
+## Key funnels
+
+1. Purchase funnel
+	- Visit on product pages (how to measure / group all these events)
+	- Signup to trial
+	- Convert trial to paid account
+
+2. Activation funnel
+	- Signup
+	- Add contacts
+	- Write release
+	- Send out campaign
+	- View results
+
+3. Campaign funnel
+	- Create campaign
+	- Write release
+	- Set meta data
+	- Create distribution 
+	- Finalize campaign
+
+4. Audience funnel
+	- Create segment
+	- Add > 5 contacts
 
 
 ## Notes on MRR tracking
