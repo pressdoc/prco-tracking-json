@@ -46,7 +46,7 @@ This README outlines the key events in tracking the success of how pr.co is used
 	- Google Analytics
 	- Intercom
 	- Adroll
-2. Most events are tracked server side - page views and order events for Adroll are tracked client side.
+2. Most events are tracked server side - page views, homepage/tour clicks and order events for Adroll are tracked client side.
 3. Dashboards / admins to view data:
 	- Keen.io explorer
 	- Google Analytics
