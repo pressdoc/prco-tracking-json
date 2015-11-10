@@ -1,6 +1,6 @@
 # Events to be tracked
 
-We're going to track 17 events, now we need to say what info we want for each event:
+We're going to track 17 events:
 
 ## Implemented:
 
