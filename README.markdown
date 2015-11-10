@@ -46,11 +46,11 @@ This README outlines the key events in tracking the success of how pr.co is used
 	- Google Analytics
 	- Intercom
 	- Adroll
-2. Most events are tracked client side - some are server side
+2. Most events are tracked server side - page views and order events for Adroll are tracked client side.
 3. Dashboards / admins to view data:
 	- Keen.io explorer
 	- Google Analytics
-	- Intercom for customter support + drip campaigns
+	- Intercom for customer support + drip campaigns
 	- pr.co Admin - orders / charging middleware to interface with Adyen
 
 ## Event list
